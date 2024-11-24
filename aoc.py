@@ -79,7 +79,7 @@ def main():
     
     print("Part 1 (test):", part1(test_data))
     # print("Part 1:", part1(data))
-    print("Part 2 (test):", part2(test_data))
+    # print("Part 2 (test):", part2(test_data))
     # print("Part 2:", part2(data))
 
 if __name__ == "__main__":
@@ -111,7 +111,7 @@ def setup_day(day: str, year: int):
         log_info(f"Test file already exists: {test_file}")
     
     # Create solution file if it doesn't exist
-    solution_file = day_dir / "solution.py"
+    solution_file = day_dir / "main.py"
     if not solution_file.exists():
         log_info(f"Creating solution file: {solution_file}")
         solution_file.write_text(solution_template)
